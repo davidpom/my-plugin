@@ -10,9 +10,8 @@ Domain Path: localization/
 Text Domain: my-plugin
 */
 
-include_once plugin_dir_path( __FILE__ ).'updater.php';
+include_once( plugin_dir_path( __FILE__ ) . 'updater.php');
 $updater = new My_Plugin_Updater(__FILE__);
 $updater->set_username('davidpom');
-	$updater->set_repository('my-plugin');
-	//$updater->authorize('6c1cd9991dafa751f7fdbd59324317c75eee39de');
-	$updater->initialize();
+$updater->set_repository('my-plugin');
+$updater->initialize();
